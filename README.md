@@ -13,7 +13,7 @@ Bone segmentation mask downloaded from: https://data.mendeley.com/datasets/k3b36
 
 A multi-class bone segmentation task; 7 different classes as follows:
 
-0: background
+0: background <br>
 1: L1
 2: L2
 3: L3
