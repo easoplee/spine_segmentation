@@ -14,11 +14,11 @@ Bone segmentation mask downloaded from: https://data.mendeley.com/datasets/k3b36
 A multi-class bone segmentation task; 7 different classes as follows:
 
 0: background <br>
-1: L1
-2: L2
-3: L3
-4: L4
-5: L5
+1: L1 <br>
+2: L2 <br>
+3: L3 <br>
+4: L4 <br>
+5: L5 <br>
 6: S1
 
 ## Architecture
