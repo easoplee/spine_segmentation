@@ -28,11 +28,15 @@ A standard 2d unet is used.
 The model predicts every pixel as background. 
 Attempts to fix this problem include decreasing learning rate and increasing batch size.
 
-The lumbar_spine_binary.ipynb code simplifies the objective in an attempt to debug the lumbar_spine.ipynb code. The simplified objective is to perform binary segmentation that classifies each pixel as background and bone. The model still predicts every pixel as background.
+The lumbar_spine_binary.ipynb code simplifies the objective in an attempt to debug the lumbar_spine.ipynb code. 
 
-Since over 94% of the pixels are labeled as background, class imbalance issue should be discussed.
+The segmentation accuracy could be improved by running more epochs.
 
 ## Future Modifications
+Run for more epochs.
+
+Add quantitative metrics in the results section.
+
 Explore different optimizers.
 
 Consider adding more regularization (dropout, BatchNormalization, InstanceNormalization, etc.).
