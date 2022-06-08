@@ -22,15 +22,18 @@ A multi-class bone segmentation task; 7 different classes as follows:
 6: S1
 
 ## Architecture
-A standard 2d unet is used.
+The standard 2d unet is used for the binary segmentation problem. It is pretrained on the brain MRI segmentation dataset. The concept of transfer learning is applied here.
+
+For the multi-class segmentation, DeepLabV3 (ResNet-50) architecture is used. 
 
 ## Results
-The model predicts every pixel as background. 
-Attempts to fix this problem include decreasing learning rate and increasing batch size.
+The model's performance is evaluated using the dice coefficient.
+
+The dice coefficient is calculated for every scan in the test set. After 35 epochs, the median dice score is 0.89. 
 
 The lumbar_spine_binary.ipynb code simplifies the objective in an attempt to debug the lumbar_spine.ipynb code. 
 
-The segmentation accuracy could be improved by running more epochs.
+The segmentation accuracy could be improved by running more epochs. The accuracy continues to go down for the entirety of training the period.
 
 ## Future Modifications
 Run for more epochs.
