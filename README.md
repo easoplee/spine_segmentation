@@ -33,7 +33,7 @@ The dice coefficient is calculated for every scan in the test set. After 35 epoc
 
 The lumbar_spine_binary.ipynb code simplifies the objective in an attempt to debug the lumbar_spine.ipynb code. 
 
-The segmentation accuracy could be improved by running more epochs. The accuracy continues to go down for the entirety of training the period.
+The segmentation accuracy could be improved by running more epochs. The accuracy continues to go down for the entirety of the training period.
 
 ## Future Modifications
 Apply the trained model to the cervical spine dataset.
